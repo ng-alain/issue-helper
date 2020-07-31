@@ -24,7 +24,9 @@ ${actually}
 | ng-alain | ${version} |
 | Browser | ${browser} |
 
-${extra ? `---\n${extra}` : ''}`;
+${extra ? `---\n${extra}` : ''}
+
+`;
 }
 
 export function getFeatureTemplate(featFormValue: { [key: string]: string }): string {
@@ -34,5 +36,7 @@ export function getFeatureTemplate(featFormValue: { [key: string]: string }): st
 ${motivation}
 
 ## What does the proposed API look like?
-${proposal}`;
+${proposal}
+
+`;
 }
