@@ -1,15 +1,12 @@
 {
-  "name": "ng-alain-issue-helper",
+  "name": "issue-helper",
   "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
   "private": true,
+  "scripts": {
+    "gen": "node ./scripts/gen.js",
+    "start": "npm run gen && ng s -o",
+    "build": "npm run gen && ng b --prod --base-href /issue-helper/ --output-path issue-helper/"
+  },
   "dependencies": {
     "@angular/animations": "~10.0.4",
     "@angular/common": "~10.0.4",
@@ -19,17 +16,21 @@
     "@angular/platform-browser": "~10.0.4",
     "@angular/platform-browser-dynamic": "~10.0.4",
     "@angular/router": "~10.0.4",
+    "ng-zorro-antd": "^10.0.0-beta.2",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.3"
+    "zone.js": "~0.10.3",
+    "marked": "^1.1.1",
+    "ngx-markdown": "^10.1.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.3",
     "@angular/cli": "~10.0.3",
     "@angular/compiler-cli": "~10.0.4",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
+    "@types/marked": "^1.1.0",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",
@@ -41,6 +42,19 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~3.9.5"
+    "typescript": "~3.9.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "stylelint": "^13.3.1",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+    "stylelint-order": "^4.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
