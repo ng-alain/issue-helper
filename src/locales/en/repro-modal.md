@@ -20,4 +20,4 @@ A **minimal** reproduction means it demonstrates the bug, and the bug only. It s
 
 ##### How to create a repro
 
-Unless your bug can only be reproduced with a built setup, we prefer reproductions made with <a href="https://stackblitz.com/edit/ng-alain-setup" target="_blank">stackblitz</a> or <a href="https://codesandbox.io/s/ng-alain-setup-dd0hq?file=/src/app/app.component.ts" target="_blank">codesandbox</a>.
+Unless your bug can only be reproduced with a built setup, we prefer reproductions made with <a href="https://stackblitz.com/edit/ng-alain-setup" target="_blank">stackblitz</a> or <a href="https://codesandbox.io/s/ng-alain-setup-dd0hq?file=/README.md" target="_blank">codesandbox</a>.

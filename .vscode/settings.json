@@ -2,8 +2,6 @@
   "editor.codeActionsOnSave": {
     // For ESLint
     "source.fixAll.eslint": true,
-    // For TSLint
-    "source.fixAll.tslint": true,
     // For Stylelint
     "source.fixAll.stylelint": true
   },
@@ -18,5 +16,6 @@
     "*.json": "jsonc",
     ".prettierrc": "json",
     ".stylelintrc": "json"
-  }
+  },
+  "git.ignoreLimitWarning": true
 }

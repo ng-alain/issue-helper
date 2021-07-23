@@ -1,20 +1,21 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { share } from 'rxjs/operators';
+
 import en from '../../locales/en.json';
 import enModal from '../../locales/en/index.json';
 import zh from '../../locales/zh.json';
 import zhModal from '../../locales/zh/index.json';
-import { BehaviorSubject, Observable } from 'rxjs';
-import { share } from 'rxjs/operators';
 
 const DATA = {
   en: {
     ...en,
-    ...enModal,
+    ...enModal
   },
   zh: {
     ...zh,
-    ...zhModal,
-  },
+    ...zhModal
+  }
 };
 
 export type LANG = 'en' | 'zh';

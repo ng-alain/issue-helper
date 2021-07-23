@@ -1,26 +1,26 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
 
-import { NzIconModule } from 'ng-zorro-antd/icon';
 import { GithubOutline, BugOutline } from '@ant-design/icons-angular/icons';
-import { NzButtonModule } from 'ng-zorro-antd/button';
-import { NzLayoutModule } from 'ng-zorro-antd/layout';
-import { NzModalModule } from 'ng-zorro-antd/modal';
-import { NzGridModule } from 'ng-zorro-antd/grid';
-import { NzFormModule } from 'ng-zorro-antd/form';
-import { NzInputModule } from 'ng-zorro-antd/input';
-import { NzSelectModule } from 'ng-zorro-antd/select';
-import { NzRadioModule } from 'ng-zorro-antd/radio';
-
 import { MarkdownModule } from 'ngx-markdown';
 
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzModalModule } from 'ng-zorro-antd/modal';
+import { NzRadioModule } from 'ng-zorro-antd/radio';
+import { NzSelectModule } from 'ng-zorro-antd/select';
+
 import { AppComponent } from './app.component';
+import { ClickLinkDirective } from './directives/click-link.directive';
 import { AppFormComponent } from './form.component';
 import { I18nPipe } from './i18n/i18n.pipe';
-import { ClickLinkDirective } from './directives/click-link.directive';
 import { HTMLPipe } from './pipes/html.pipe';
 import { PreviewComponent } from './preview.component';
 
@@ -41,8 +41,8 @@ import { PreviewComponent } from './preview.component';
     NzFormModule,
     NzInputModule,
     NzSelectModule,
-    NzRadioModule,
+    NzRadioModule
   ],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

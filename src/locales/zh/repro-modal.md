@@ -20,4 +20,4 @@
 
 ##### 如何提供一个重现
 
-除非你的 bug 只有在构建工具下才能重现，否则我们建议使用 <a href="https://stackblitz.com/edit/ng-alain-setup" target="_blank">stackblitz</a> 或者 <a href="https://codesandbox.io/s/ng-alain-setup-dd0hq?file=/src/app/app.component.ts" target="_blank">codesandbox</a>。
+除非你的 bug 只有在构建工具下才能重现，否则我们建议使用 <a href="https://stackblitz.com/edit/ng-alain-setup" target="_blank">stackblitz</a> 或者 <a href="https://codesandbox.io/s/ng-alain-setup-dd0hq?file=/README.md" target="_blank">codesandbox</a>。

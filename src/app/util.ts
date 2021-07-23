@@ -1,8 +1,10 @@
 // 匹配预定复现网址
 // tslint:disable-next-line:max-line-length
-export const REP_LINK_REGEXP = /(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]*(stackblitz|github|codesandbox)[-A-Za-z0-9+&@#/%?=~_|!:,.;]+/;
+export const REP_LINK_REGEXP =
+  /(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]*(stackblitz|github|codesandbox)[-A-Za-z0-9+&@#/%?=~_|!:,.;]+/;
 // 现有网址不可完全复制
-export const PREVENT_COPY_LINK = /^(https?:\/\/)?((stackblitz\.com\/edit\/ng-zorro-antd-ivy)|(ng-zorro-antd-ivy\.stackblitz\.io)|(codesandbox.io\/s\/ng-zorro-antd-ivy-mp18k))\/?$/i;
+export const PREVENT_COPY_LINK =
+  /^(https?:\/\/)?((stackblitz\.com\/edit\/ng-zorro-antd-ivy)|(ng-zorro-antd-ivy\.stackblitz\.io)|(codesandbox.io\/s\/ng-zorro-antd-ivy-mp18k))\/?$/i;
 
 export function getBugTemplate(bugFormValue: { [key: string]: string }): string {
   const { reproduction, steps, expected, actually, version, browser, extra } = bugFormValue;

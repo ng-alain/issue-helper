@@ -1,11 +1,12 @@
 import { Component, ChangeDetectionStrategy, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
-import { I18nService, LANG } from './i18n/i18n.service';
 import { Subscription } from 'rxjs';
+
+import { I18nService, LANG } from './i18n/i18n.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent implements OnInit, OnDestroy {
   private i18n$!: Subscription;

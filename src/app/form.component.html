@@ -14,7 +14,11 @@
       <nz-form-item>
         <nz-form-label nzFor="type">{{ l['issue.type'] }}</nz-form-label>
         <nz-form-control>
-          <nz-radio-group [(ngModel)]="issueType" (ngModelChange)="changeType()" [ngModelOptions]="{ standalone: true }">
+          <nz-radio-group
+            [(ngModel)]="issueType"
+            (ngModelChange)="changeType()"
+            [ngModelOptions]="{ standalone: true }"
+          >
             <label nz-radio-button nzValue="bug">{{ l['issue.type.bug'] }}</label>
             <label nz-radio-button nzValue="feature">{{ l['issue.type.feature'] }}</label>
           </nz-radio-group>
@@ -131,7 +135,7 @@
         </nz-form-item>
       </div>
     </ng-container>
-    <div nz-col [nzSpan]="24" style="text-align: center;">
+    <div nz-col [nzSpan]="24" style="text-align: center">
       <button nz-button [nzSize]="'large'" nzType="primary" (click)="submitFormPreview()">
         <i nz-icon nzType="bug"></i>
         {{ l['issue.preview'] }}

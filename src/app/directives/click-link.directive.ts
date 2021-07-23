@@ -1,9 +1,11 @@
 import { Directive, HostListener } from '@angular/core';
-import { I18nService } from '../i18n/i18n.service';
+
 import { NzModalService } from 'ng-zorro-antd/modal';
 
+import { I18nService } from '../i18n/i18n.service';
+
 @Directive({
-  selector: '[click-link]',
+  selector: '[click-link]'
 })
 export class ClickLinkDirective {
   constructor(private i18n: I18nService, private modal: NzModalService) {}
@@ -25,7 +27,7 @@ export class ClickLinkDirective {
       this.modal.create({
         nzTitle: el.textContent?.trim(),
         nzContent: html,
-        nzFooter: null,
+        nzFooter: null
       });
     });
   }

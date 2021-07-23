@@ -7,7 +7,7 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
       <markdown [data]="previewData"></markdown>
     </div>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PreviewComponent {
   @Input() previewData!: string;
