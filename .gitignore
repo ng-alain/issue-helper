@@ -1,5 +1,6 @@
 node_modules
 npm-debug.log
+/.angular/cache
 # package-lock.json
 yarn.lock
 yarn-error.log

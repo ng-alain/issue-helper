@@ -143,7 +143,7 @@ export class AppFormComponent implements OnInit, OnDestroy {
   private fetchReleases(): void {
     this.githubSrv.fetchReleases().subscribe((data: Array<{ tag_name: string }>) => {
       this.versions = data.map(v => v.tag_name);
-      this.issueBugForm.controls.version.setValue(this.versions[0]);
+      this.issueBugForm.controls['version'].setValue(this.versions[0]);
       this.cdr.detectChanges();
     });
   }
